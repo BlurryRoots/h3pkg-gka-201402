@@ -12,7 +12,7 @@ function h3pkg_script_get_raw () {
 
 # callback for building the package
 function h3pkg_script_build_package () {
-	local raw_base=${H3PKG_PACKAGE_HOME}/.cache/WS2014-AI
+	local raw_base=${H3PKG_PACKAGE_HOME}/.cache/Home_GKA_WiSe14
 	#
 	cd ${H3PKG_PACKAGE_HOME} && {
 		rm -rf gka
