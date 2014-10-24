@@ -20,9 +20,9 @@ function h3pkg_script_build_package () {
 		cd gka && {
 			mkdir -p doc lab etc
 
-			cp ${raw_base}/Folien/* doc
-			cp ${raw_base}/PDF/* etc
-			cp ${raw_base}/Stuff/* lab
+			cp -aR ${raw_base}/Folien/* doc
+			cp -aR ${raw_base}/PDF/* etc
+			cp -aR ${raw_base}/Stuff/* lab
 			mv etc/aufgaben.pdf lab
 
 			tar -jcf gka.tar doc lab etc
